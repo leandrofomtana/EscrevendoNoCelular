@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaCelular", "BibliotecaCelular\BibliotecaCelular.csproj", "{C6EBF019-4A54-4567-85A5-7A13C08FBA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteMensagemEscrita", "TesteMensagemEscrita\TesteMensagemEscrita.csproj", "{82E6ECBA-22A0-44C0-89C7-F8B6EC0DB612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6EBF019-4A54-4567-85A5-7A13C08FBA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EBF019-4A54-4567-85A5-7A13C08FBA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EBF019-4A54-4567-85A5-7A13C08FBA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EBF019-4A54-4567-85A5-7A13C08FBA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E6ECBA-22A0-44C0-89C7-F8B6EC0DB612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E6ECBA-22A0-44C0-89C7-F8B6EC0DB612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E6ECBA-22A0-44C0-89C7-F8B6EC0DB612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E6ECBA-22A0-44C0-89C7-F8B6EC0DB612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBBC5B80-A233-403F-AB41-AA9599ED893E}
+	EndGlobalSection
+EndGlobal
