@@ -47,8 +47,6 @@ namespace BibliotecaCelular
                         resposta += numeros;
                 }
             }
-            else
-                resposta = "Passou do limite de mensagem";
             return resposta;
         }
 
