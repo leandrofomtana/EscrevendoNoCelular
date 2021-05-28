@@ -6,7 +6,7 @@ namespace BibliotecaCelular
     public class Celular
     {
         private readonly Dictionary<string, int> dicionarioTeclas;
-        private string mensagem;
+        private readonly string mensagem;
 
         public Celular(string mensagem)
         {
@@ -30,11 +30,16 @@ namespace BibliotecaCelular
 
         public string RecebeMensagem()
         {
-            string resposta = "";
-            if(mensagem.Length <= 255)
+            string resposta = ValidaMensagem();
+            if (resposta == "")
             {
                 foreach (char c in mensagem)
                 {
+                    if (Char.IsDigit(c))
+                    {
+                        resposta = "A mensagem não pode conter digitos.";
+                        break;
+                    }
                     string numeros = ConverteCharParaNumero(c);
                     if (resposta.EndsWith(numeros[0]))
                         resposta += "_" + numeros;
@@ -42,6 +47,8 @@ namespace BibliotecaCelular
                         resposta += numeros;
                 }
             }
+            else
+                resposta = "Passou do limite de mensagem";
             return resposta;
         }
 
@@ -57,6 +64,15 @@ namespace BibliotecaCelular
                 }
             }
             return numero;
+        }
+        private string ValidaMensagem()
+        {
+            foreach (char c in mensagem)
+                if (char.IsDigit(c))
+                    return "Não pode conter dígitos";
+            if (mensagem.Length>255)
+                return "Não pode ser maior que 255";
+            return "";
         }
     }
 }

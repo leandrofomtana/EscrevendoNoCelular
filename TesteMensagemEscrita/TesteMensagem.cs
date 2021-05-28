@@ -1,4 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BibliotecaCelular;
 namespace TesteMensagemEscrita
 {
@@ -11,6 +11,12 @@ namespace TesteMensagemEscrita
             Celular celular = new("SEMPRE ACESSO O DOJOPUZZLES");
             Assert.AreEqual("77773367_7773302_222337777_77776660666036" +
                 "6656667889999_9999555337777", celular.RecebeMensagem());
+        }
+        [TestMethod]
+        public void Erro1()
+        {
+            Celular celular = new("SEMPRE 12321321");
+            Assert.AreEqual("Não pode conter dígitos", celular.RecebeMensagem());
         }
     }
 }
